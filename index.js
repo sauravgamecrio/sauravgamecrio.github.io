@@ -218,7 +218,6 @@ function createObstacle() {
     const obstacle = obstaclePool.pop() || createObstacleImages();
     obstacle.x = app.screen.width;
     obstacle.y = app.screen.height * 0.89;
-    updateObstaclePositionsAndScales();
     return obstacle;
 
 }
@@ -226,7 +225,6 @@ function createObstacle() {
 function resetObstacle(obstacle) {
     obstaclePool.push(obstacle);
 
-    updateObstaclePositionsAndScales();
 }
 
 // //obstacles setup
@@ -278,18 +276,6 @@ function spawnObstacles() {
 
 // Spawn obstacles every 3 seconds
 spawnInterval = setInterval(spawnObstacles, 4000);
-
-// Obstcle sclling with new gamescaled
-function updateObstaclePositionsAndScales() {
-    obstacles.forEach(obstacle => {
-        obstacle.x = (obstacle.x - app.stage.x) / app.stage.scale.x;
-        obstacle.y = (obstacle.y - app.stage.y) / app.stage.scale.y;
-
-        obstacle.visible = false;
-    });
-}
-
-
 
 
 //collision between player and obstacles
@@ -401,6 +387,7 @@ function gamePaused(){
     continueText.on('pointerup', () =>{
         isJumping = false;
         continueText.visible = false;
+
     });
 }
 
@@ -505,6 +492,11 @@ app.ticker.add((delta) => {
 
         obstacles.forEach(obstacle => {
             obstacle.x -= 8 * delta; // Move obstacles to the left
+
+            if(obstacle.x < 0 ){
+                obstacle.visible = false;
+            }
+        
         });
 
         collisionDetaction();
@@ -536,7 +528,6 @@ function adjustGameScaleAndPosition() {
 
     app.renderer.resize(window.innerWidth, window.innerHeight);
 
-    updateObstaclePositionsAndScales();
 }
 adjustGameScaleAndPosition();
 
