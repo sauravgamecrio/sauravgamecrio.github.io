@@ -218,11 +218,15 @@ function createObstacle() {
     const obstacle = obstaclePool.pop() || createObstacleImages();
     obstacle.x = app.screen.width;
     obstacle.y = app.screen.height * 0.89;
+    updateObstaclePositionsAndScales();
     return obstacle;
+
 }
 
 function resetObstacle(obstacle) {
     obstaclePool.push(obstacle);
+
+    updateObstaclePositionsAndScales();
 }
 
 // //obstacles setup
@@ -274,6 +278,17 @@ function spawnObstacles() {
 
 // Spawn obstacles every 3 seconds
 spawnInterval = setInterval(spawnObstacles, 4000);
+
+// Obstcle sclling with new gamescaled
+function updateObstaclePositionsAndScales() {
+    obstacles.forEach(obstacle => {
+        obstacle.x = (obstacle.x - app.stage.x) / app.stage.scale.x;
+        obstacle.y = (obstacle.y - app.stage.y) / app.stage.scale.y;
+
+        obstacle.visible = false;
+    });
+}
+
 
 
 
@@ -499,31 +514,32 @@ app.ticker.add((delta) => {
     // console.log("Parallax Speed1:", parallaxTilingSprites[8].speed);
 });
 
-// Responsive
+// Scaled game with any display
+function adjustGameScaleAndPosition() {
 
-// // Define the design resolution
-// const designResolution = { width: 1920, height: 1080 };
+    const margin = 200;
 
-// // Calculate the scale factor
-// const scaleFactor = Math.min(window.innerWidth / designResolution.width, window.innerHeight / designResolution.height);
+    const availableWidth = window.innerWidth - margin * 2;
+    const availableHeight = window.innerHeight - margin * 2;
 
-// // Apply the scale factor to all game elements
-// playerContainer.scale.set(scaleFactor, scaleFactor);
-// platformContainer.scale.set(scaleFactor, scaleFactor);
-// parallaxContainer.scale.set(scaleFactor,scaleFactor);
-// obstacleContainer.scale.set(scaleFactor,scaleFactor);
-// pauseText.scale.set(scaleFactor,scaleFactor);
-// continueText.scale.set(scaleFactor,scaleFactor);
-// tapToPlayText.scale.set(scaleFactor,scaleFactor);
-// gameOverText.scale.set(scaleFactor,scaleFactor);
-// // Repeat for other elements: animations, text, obstacles, parallax sprites, etc.
+    const scaleFactor = Math.min(availableWidth / app.screen.width, availableHeight / app.screen.height);
 
-// // Adjust the game's position
-// const offsetX = (window.innerWidth - designResolution.width * scaleFactor) / 2;
-// const offsetY = (window.innerHeight - designResolution.height * scaleFactor) / 2;
-// app.stage.x = offsetX;
-// app.stage.y = offsetY;
+    app.stage.scale.set(scaleFactor, scaleFactor);
 
-// // Update the game's renderer size
-// app.renderer.resize(window.innerWidth, window.innerHeight);
+    // offset to center the game within the display
+    const offsetX = (window.innerWidth - app.screen.width * scaleFactor) / 2;
+    const offsetY = (window.innerHeight - app.screen.height * scaleFactor) / 2;
+
+    // Adjust the game's position
+    app.stage.x = offsetX;
+    app.stage.y = offsetY;
+
+    app.renderer.resize(window.innerWidth, window.innerHeight);
+
+    updateObstaclePositionsAndScales();
+}
+adjustGameScaleAndPosition();
+
+window.addEventListener('resize', adjustGameScaleAndPosition);
+
 
