@@ -1,0 +1,395 @@
+{
+	"frames": {
+		"Orion_HoverboardDeath(144,96)_19F.dain1.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain10.png": {
+			"frame": {
+				"x": 147,
+				"y": 1,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain11.png": {
+			"frame": {
+				"x": 293,
+				"y": 1,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain12.png": {
+			"frame": {
+				"x": 1,
+				"y": 99,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain13.png": {
+			"frame": {
+				"x": 147,
+				"y": 99,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain14.png": {
+			"frame": {
+				"x": 293,
+				"y": 99,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain15.png": {
+			"frame": {
+				"x": 1,
+				"y": 197,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain16.png": {
+			"frame": {
+				"x": 147,
+				"y": 197,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain17.png": {
+			"frame": {
+				"x": 293,
+				"y": 197,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain18.png": {
+			"frame": {
+				"x": 1,
+				"y": 295,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain19.png": {
+			"frame": {
+				"x": 147,
+				"y": 295,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain2.png": {
+			"frame": {
+				"x": 293,
+				"y": 295,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain3.png": {
+			"frame": {
+				"x": 1,
+				"y": 393,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain4.png": {
+			"frame": {
+				"x": 147,
+				"y": 393,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain5.png": {
+			"frame": {
+				"x": 293,
+				"y": 393,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain6.png": {
+			"frame": {
+				"x": 439,
+				"y": 1,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain7.png": {
+			"frame": {
+				"x": 439,
+				"y": 99,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain8.png": {
+			"frame": {
+				"x": 439,
+				"y": 197,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		},
+		"Orion_HoverboardDeath(144,96)_19F.dain9.png": {
+			"frame": {
+				"x": 439,
+				"y": 295,
+				"w": 144,
+				"h": 96
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 96
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 96
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "playerDeath.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 584,
+			"h": 490
+		},
+		"scale": "1"
+	}
+}

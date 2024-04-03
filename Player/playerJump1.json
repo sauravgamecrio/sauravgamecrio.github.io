@@ -1,0 +1,275 @@
+{
+	"frames": {
+		"Orion-Hoverboard_Jump(96,96)_18F.dain10.png": {
+			"frame": {
+				"x": 19,
+				"y": 1,
+				"w": 58,
+				"h": 84
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain11.png": {
+			"frame": {
+				"x": 117,
+				"y": 1,
+				"w": 58,
+				"h": 70
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain12.png": {
+			"frame": {
+				"x": 215,
+				"y": 1,
+				"w": 58,
+				"h": 62
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain13.png": {
+			"frame": {
+				"x": 313,
+				"y": 1,
+				"w": 58,
+				"h": 62
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain14.png": {
+			"frame": {
+				"x": 18,
+				"y": 147,
+				"w": 58,
+				"h": 82
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain15.png": {
+			"frame": {
+				"x": 117,
+				"y": 147,
+				"w": 58,
+				"h": 102
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain16.png": {
+			"frame": {
+				"x": 215,
+				"y": 147,
+				"w": 38,
+				"h": 122
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain17.png": {
+			"frame": {
+				"x": 313,
+				"y": 147,
+				"w": 58,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain5.png": {
+			"frame": {
+				"x": 411,
+				"y": 1,
+				"w": 58,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain6.png": {
+			"frame": {
+				"x": 411,
+				"y": 147,
+				"w": 58,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain7.png": {
+			"frame": {
+				"x": 19,
+				"y": 293,
+				"w": 58,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain8.png": {
+			"frame": {
+				"x": 117,
+				"y": 293,
+				"w": 58,
+				"h": 118
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		},
+		"Orion-Hoverboard_Jump(96,96)_18F.dain9.png": {
+			"frame": {
+				"x": 215,
+				"y": 293,
+				"w": 58,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 96,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 96,
+				"h": 144
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "playerJump1.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 490,
+			"h": 438
+		},
+		"scale": "1"
+	}
+}
