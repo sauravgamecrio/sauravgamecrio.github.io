@@ -1,14 +1,16 @@
-import { Application, Container, Sprite, Loader, AnimatedSprite, TilingSprite, Texture, TextStyle, Text, Graphics } from "./node_modules/pixi.js/dist/browser/pixi.min.mjs";
+// import { Application, Container, Sprite, Loader, AnimatedSprite, TilingSprite, Texture, TextStyle, Text, Graphics } from "./node_modules/pixi.js/dist/browser/pixi.min.mjs";
 
+import { Application, Container, Sprite, Loader, AnimatedSprite, TilingSprite, Texture, TextStyle, Text, Graphics } from "./pixi.min.mjs";
 // App
 const app = new Application({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 1280,
+    height:720,
     resizeTo: window
 });
 app.renderer.view.style.position = 'absolute';
 document.body.appendChild(app.view);
 console.log("Load done..:)");
+
 
 let parallaxContainer = new Container();
 app.stage.addChild(parallaxContainer);
@@ -34,7 +36,7 @@ function createParallaxTilingSprite(path, speed) {
     return tilingSprite;
 }
 
-const parallaxTilingSprites = [];
+let parallaxTilingSprites = [];
 
 const images = [
     { path: './Forest/10.png', speed: 1.1 },
@@ -73,7 +75,7 @@ function setupPlatform() {
     return platformSprite;
 }
 //call the platform function
-const platformSprite = setupPlatform();
+let platformSprite = setupPlatform();
 
 // Player Container
 let playerContainer = new Container();
@@ -104,22 +106,22 @@ function createAnimation(baseName, start, end, speed, scaleX, scaleY, x, y) {
 }
 function setupPlayerAnimations() {
     // Ideal
-    const playerIdeal = createAnimation('Orion-Hoverboard_Idle(96,96)_18F.dain', 1, 13, 0.10, 2.5, 2.5, 300, 680);
+    const playerIdeal = createAnimation('Orion-Hoverboard_Idle(96,96)_18F.dain', 1, 13, 0.10, 2.5, 2.5, window.innerWidth * 0.3, window.innerHeight * 0.7);
     playerIdeal.visible = true;
     playerIdeal.play();
 
     // Move
-    const playerMove = createAnimation('Orion-Hoverboard_Move(96,96)_17F.dain', 1, 7, 0.25, 2.5, 2.5, 300, 680);
+    const playerMove = createAnimation('Orion-Hoverboard_Move(96,96)_17F.dain', 1, 7, 0.25, 2.5, 2.5, window.innerWidth * 0.3, window.innerHeight * 0.7);
     playerMove.visible = false;
     playerMove.stop();
 
     // Jump
-    const playerJump = createAnimation('Orion-Hoverboard_Jump(96,96)_18F.dain', 5, 17, 0.25, 2.5, 2.5, 300, 570);
+    const playerJump = createAnimation('Orion-Hoverboard_Jump(96,96)_18F.dain', 5, 17, 0.25, 2.5, 2.5, window.innerWidth * 0.3, window.innerHeight * 0.7);
     playerJump.visible = false;
     playerJump.stop();
 
     //Death 
-    const playerDeath = createAnimation('Orion_HoverboardDeath(144,96)_19F.dain', 2, 19, 0.15, 2.5, 2.5, 100, 680);
+    const playerDeath = createAnimation('Orion_HoverboardDeath(144,96)_19F.dain', 2, 19, 0.15, 2.5, 2.5, window.innerWidth * 0.1, window.innerHeight * 0.7);
     playerDeath.visible = false;
     playerDeath.stop();
 
@@ -509,10 +511,11 @@ app.ticker.add((delta) => {
 // Scaled game with any display
 function adjustGameScaleAndPosition() {
 
-    const margin = 200;
+    const margin1 = 0.2 * window.innerWidth;
+    const margin2 = 0.2 * window.innerHeight ;
 
-    const availableWidth = window.innerWidth - margin * 2;
-    const availableHeight = window.innerHeight - margin * 2;
+    const availableWidth = window.innerWidth - margin1 ;
+    const availableHeight = window.innerHeight - margin2 ;
 
     const scaleFactor = Math.min(availableWidth / app.screen.width, availableHeight / app.screen.height);
 
@@ -532,5 +535,49 @@ function adjustGameScaleAndPosition() {
 adjustGameScaleAndPosition();
 
 window.addEventListener('resize', adjustGameScaleAndPosition);
+
+// Function to adjust positions and scales dynamically based on screen size
+function adjustElementsForScreenSize() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // Adjust parallax sprites
+    parallaxTilingSprites.forEach(tilingSprite => {
+        tilingSprite.width = screenWidth;
+        tilingSprite.height = screenHeight;
+        tilingSprite.position.set(screenWidth / 2, screenHeight / 2);
+    });
+
+    // Adjust platform
+    platformSprite.width = screenWidth;
+    platformSprite.position.set(0, screenHeight - platformSprite.height);
+
+    // Adjust player animations
+    playerContainer.children.forEach(animation => {
+        animation.position.set(screenWidth * 0.3, screenHeight * 0.7); // Example positioning, adjust as needed
+    });
+
+    // Adjust obstacles
+    obstacles.forEach(obstacle => {
+        obstacle.y = screenHeight * 0.89;
+    });
+
+    // Adjust UI elements
+    tapToPlayText.position.set(screenWidth / 2, screenHeight / 2);
+    pauseText.position.set(screenWidth - pauseText.width - 10, 10);
+    gameOverText.position.set(screenWidth / 2, screenHeight / 2);
+    scoreText.position.set(10, 10);
+    highScoreText.position.set(screenWidth - highScoreText.width - 10, 10);
+}
+
+// Call the adjustment function initially
+adjustElementsForScreenSize();
+
+// Adjust elements on window resize
+window.addEventListener('resize', () => {
+    adjustGameScaleAndPosition();
+    adjustElementsForScreenSize();
+});
+
 
 
